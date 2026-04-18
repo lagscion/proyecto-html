@@ -22,4 +22,6 @@ a:hover{background-color: rgba(220, 220, 220, 0.14);}
 p {text-align: left;color: white;margin-left: 4%;font-size: 120%;}
 span{ text-align: left;color: white;font-size: 70%; letter-spacing: 0.2vh ;}
 .flecha{ margin-left: 2%}
-.astro{font-size: 500%;  }
+.astro{font-size: 500%;}
+.botones{display: flex;  justify-content: center;}
+.travel, .explore, .book {margin: 3%;height: 20vh;width: 20vh;border-radius: 2vh;border: none;} 
