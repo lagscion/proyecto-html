@@ -84,3 +84,4 @@ footer div{text-align: center;font-family: sans-serif;color: rgba(228, 227, 227,
 .linea{border: 1px rgba(228, 227, 227, 0.9) solid;width: 0;height: 35%;}
 .casa{height: 45px;width: 40px;}
 .globo{height: 45px;width: 45px;}
+li div:hover{background-color: rgba(220, 220, 220, 0.2);cursor: pointer;}
