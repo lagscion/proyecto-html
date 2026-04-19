@@ -12,6 +12,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 header{display: flex;gap: 2%;padding-left: 4%;padding-top: 4%;height: 10%;width: 50%;align-items: center;font-size: 2vh;}
 img{height: 8vh;width: 8vh;border-radius: 100%;}
@@ -58,7 +60,7 @@ input{background: transparent;border: none;font-size: 100%;;height: 100%;outline
 input::placeholder{color: white;}
 .historial {background: rgba(255, 255, 255, 0.1);color: white;border: none;border-radius: 10px;padding: 5px 10px;font-family: sans-serif;cursor: pointer;outline: none;height: 80%;font-size: 100%;
 }
-ul{padding: 0;margin-left: 3%;height: 33%;}
+ul{padding: 0;margin-left: 3%;height: 31%;flex: 1;height: auto;}
 li {
     display: flex;
     /* Pone la imagen y el texto en línea */
@@ -77,6 +79,8 @@ li {
 .marte, .tierra, .estacion, .luna, .natural{color: white;font-size: 80%;color:rgba(220, 220, 220, 0.4) ;}
 li div{border-bottom: 2px solid rgba(255, 255, 255, 0.2);width: 100%;padding-bottom: 2vh;padding-top: 2vh;}
 li img {width: 11%; height: 5%;}
-footer{display: flex;justify-content: center;border-top: rgba(151, 151, 151, 0.9) 1px solid;width: 100%;height:100% ;background-color: rgba(151, 151, 151, 0.4); gap: 20%;align-items: center;border-top-left-radius: 15px;border-top-right-radius: 15px;}
-footer div{width: 100%;text-align: center;font-family: sans-serif;color: rgba(228, 227, 227, 0.9);}
+footer{display: flex;justify-content: center;border-top: rgba(151, 151, 151, 0.9) 1px solid;width: 100%;height:10vh ;background-color: rgba(151, 151, 151, 0.4); gap: 20%;align-items: center;border-top-left-radius: 15px;border-top-right-radius: 15px;flex-shrink: 0;}
+footer div{text-align: center;font-family: sans-serif;color: rgba(228, 227, 227, 0.9);display: flex;flex-direction: column;}
 .linea{border: 1px rgba(228, 227, 227, 0.9) solid;width: 0;height: 35%;}
+.casa{height: 45px;width: 40px;}
+.globo{height: 45px;width: 45px;}
