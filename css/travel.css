@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* La ruta debe ir entre comillas. Usa ../ para salir de la carpeta css */
+    background-image: url('../assets/img/Gemini_Generated_Image_c88rdsc88rdsc88r.PNG');
+    background-size: cover;
+    /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se duplique como mosaico */
+    background-attachment: fixed;
+    /* Hace que el fondo se quede quieto al hacer scroll */
+}
