@@ -53,11 +53,15 @@ border-top-right-radius: 12px;display: flex;flex-direction: column;align-items: 
 .linea{border: 2px solid rgba(151, 151, 151, 1);width: 10%;height: 0;margin-top: 4%;cursor: pointer;}
 .mensaje{font-family: sans-serif;font-size: 90%;margin-top: 3%;color: rgba(151, 151, 151, 1);}
 ul{width: 100%;margin-left: 0;display: flex;list-style: none;padding: 0;flex-direction: column;height: 10vh;}
-li{font-family: sans-serif;font-size: 89%;color: aliceblue;;font-weight: bold;border-top: 1px solid white;border-bottom:1px solid white ;width: 100%;height: 100%;align-content: center;display: flex;align-items: center;line-height: 18px;letter-spacing: 1.5px;}
+li{font-family: sans-serif;font-size: 89%;color: aliceblue;;font-weight: bold;border-top: 1px solid white;border:1px solid rgba(220, 220, 220, 0.14) ;width: 100%;height: 100%;align-content: center;display: flex;align-items: center;line-height: 18px;letter-spacing: 1.5px;}
 li:nth-child(2){border-top: transparent;}
 li:nth-child(3) {border-top: transparent;}
 li:nth-child(4) {border: transparent;}
+li:last-child {
+    border: transparent;
+}
 li:hover{background-color:rgba(220, 220, 220, 0.14) ;border-color:rgba(255, 255,255,0.5) ;}
+
 .satelite{
     height: 100%;
     width: 65px;
@@ -86,22 +90,24 @@ span{font-weight: normal;font-size: 80%;color: rgba(151, 151, 151, 1);}
     margin-bottom: 5px;
     /* Evita que el flexbox lo aplaste */
 }
-.precio{padding-left: 10%;font-size: 16px;width: 15%;height: 50%;display: flex;justify-content: center;align-items: center;color: aliceblue;padding-right: 0;text-align: right;}
-.precio{margin-right: -12px;}
-.wallet{justify-content: center;align-items: center;height: 50px; width: 70%;margin-left: 4%;display: flex; flex-direction: row;}
+.precio{padding-left: 10%;font-size: 16px;width: 15%;height: 50%;display: flex;justify-content: center;align-items: center;color: aliceblue;padding-right: 0;text-align: right;margin-right: -12px;}
+.wallet{justify-content: center;align-items: center;height: 50px; width: 40%;display: flex; flex-direction: row;text-align: center;margin-right: 30%;}
 .nequi{width: auto;
     /* Tamaño fijo para que no se descontrole */
     height: 60px;
     object-fit: contain;
     flex-shrink: 0;
     margin-top: 10px;
-    margin-left: 6%;
+    margin-left: 4%;
     /* Evita que el flexbox lo aplaste */}
-    .menor{justify-content: center;
+
+.menor{justify-content: center;
         align-items: center;
         height: 50px;
-        margin-left: 10px;
         display: flex;
     font-weight: bold;
 color: aliceblue;
-margin-left: 90%;}
+;font-size: 20px;display: flex;justify-content: right;margin-right: 10%;}
+.desliz{display: flex;justify-content: center;}
+input{width: 85%;cursor: pointer; appearance: none;height: 200%;}
+input[type="range"]::-webkit-slider-thumb{height: 20px;width: 20px;}
