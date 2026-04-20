@@ -1,14 +1,56 @@
-body {
+body,html {
     margin: 0;
-    min-height: 100vh;
-    /* La ruta debe ir entre comillas. Usa ../ para salir de la carpeta css */
-    background-image: url('../assets/img/Gemini_Generated_Image_c88rdsc88rdsc88r.PNG');
-    background-size: cover;
-    /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+
+
+    /* Ajusta la imagen para cubrir todo sin deformarse */
+    background-position:top center;
     /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que la imagen se duplique como mosaico */
+    background-attachment: scroll;
+    /* Efecto elegante: la imagen no se mueve al hacer scroll */
+
+    /* Centrado del contenido que agregues */
+    display: flex;
     background-attachment: fixed;
-    /* Hace que el fondo se quede quieto al hacer scroll */
+    flex-direction: column;
 }
+header,body {
+    margin-top: 0;background-image: url('../assets/img/Gemini_Generated_Image_c88rdsc88rdsc88r.PNG');height: 100%;
+width: 100vw;background-size: cover;background-size: cover;background-position: top center;display: flex;}
+a {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left:4%;
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 10px;
+    font-weight: bold;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(151, 151, 151, 0.3) ;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:hover{background-color:rgba(151, 151, 151, 0.6) ;}
+
+.r{border-top:rgba(151, 151, 151, 0.8) 1px solid;margin-top: 0;width: 100%;;height: 130%; border-top-left-radius:12px ;border-top-right-radius: 12px;background: linear-gradient(to bottom left,
+            #000514 0%,
+            #0f0122 50%,
+            #2b0430 90%);
+        display: flex;}
+.rs{height: 100%;width: 100%;background-color:rgba(151, 151, 151, 0.3) ;border-top-left-radius: 12px;
+border-top-right-radius: 12px;display: flex;flex-direction: column;align-items: center;}
+.linea{border: 2px solid rgba(151, 151, 151, 1);width: 10%;height: 0;margin-top: 4%;cursor: pointer;}
+.mensaje{font-family: sans-serif;font-size: 90%;margin-top: 3%;color: rgba(151, 151, 151, 1);}
+.uno{font-family: sans-serif;font-size: 90%;color: aliceblue;margin-top: 9%;font-weight: bold;border: 1px solid white;width: 100%;height: 15%;align-content: center;}
+span{font-weight: normal;font-size: 80%;color: rgba(151, 151, 151, 1);}
