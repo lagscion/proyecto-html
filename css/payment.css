@@ -1,0 +1,185 @@
+:root {
+    /* Design Tokens */
+    --bg-dark: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --primary-text: #f8fafc;
+    --secondary-text: #94a3b8;
+    --accent-yellow: #fde047;
+    --accent-red: #ef4444;
+
+    --fz-lg: 1.25rem;
+    --radius-md: 12px;
+    --space-5: 1.25rem;
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--primary-text);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.payment-container {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-5);
+    padding-bottom: 100px;
+    /* Espacio para el botón sticky */
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    margin-bottom: var(--space-5);
+}
+
+.title-lg {
+    font-size: var(--fz-lg);
+    font-weight: 600;
+}
+
+/* Search */
+.search-wrapper {
+    margin-bottom: var(--space-5);
+}
+
+.search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-search {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    color: white;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    color: var(--secondary-text);
+}
+
+/* Cards */
+.payment-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.payment-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.payment-card:focus-visible {
+    outline: 2px solid var(--primary-text);
+    outline-offset: 4px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.method-icon {
+    width: 40px;
+    height: 30px;
+    background: #334155;
+    border-radius: 4px;
+}
+
+.method-number {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.method-expiry {
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+}
+
+/* Badges & Actions */
+.badge-default {
+    background: var(--accent-yellow);
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-icon-action {
+    background: transparent;
+    border: none;
+    color: var(--secondary-text);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn-delete {
+    color: var(--accent-red);
+    opacity: 0.8;
+}
+
+/* Sticky Footer */
+.footer-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-5);
+    background: linear-gradient(to top, var(--bg-dark) 80%, transparent);
+}
+
+.btn-primary {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    display: block;
+    padding: 16px;
+    background: #28313f;
+    border: 2px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+.btn-kebab{background-color: transparent;height: 30px;width: 20px;border: none;color: #94a3b8;}
+.btn-icon{background-color: transparent;border: none;}
+img{height: 100%;width: 100%;}
