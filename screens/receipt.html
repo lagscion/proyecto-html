@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recipt.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pantalla-todo-junto">
+        <div class="header-superior-arriba" style="display: flex;">
+            <button class="boton-para-volver-atras" aria-label="Back">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            <h1 class="texto-titulo-grande-h1">Receipt</h1>
+        </div>
+    
+        <div class="div-principal-del-centro-final">
+            <div class="la-tarjeta-blanca-transparente">
+                <div class="seccion-dinero-mucho">
+                    <h2 class="el-precio-final-que-se-ve">$859.50</h2>
+                    <p class="nombre-de-la-empresa-vuelos">SpaceX Airline</p>
+                    <p class="fecha-dia-mes-año">15th Oct 2024, 08:15 AM</p>
+                </div>
+    
+                <div class="bloque-de-datos-vuelo">
+                    <h3 class="titulo-chiquito-gris">Flight Details</h3>
+                    <div class="caja-vuelo-trayecto">
+                        <div class="nodo-punto-uno">
+                            <span class="nombre-aeropuerto-letras">JFK</span>
+                            <span class="hora-de-salida">10:30 AM</span>
+                        </div>
+                        <div class="flechita-azul-derecha">→</div>
+                        <div class="nodo-punto-dos">
+                            <span class="nombre-aeropuerto-letras">LAX</span>
+                            <span class="hora-de-llegada">01:45 PM</span>
+                        </div>
+                    </div>
+    
+                    <div class="rejilla-con-muchas-filas">
+                        <div class="fila-repetida-1"><span>Flight Number</span><strong style="font-weight: bold;">AN123</strong></div>
+                        <div class="fila-repetida-2"><span>Seat</span><strong>24A</strong></div>
+                        <div class="linea-que-separa-cosas"></div>
+                        <div class="fila-dinero"><span>Fare</span><span>$780.00</span></div>
+                        <div class="fila-dinero"><span>Taxes & Fees</span><span>$79.50</span></div>
+                        <div class="fila-total-amarilla"><span>Total</span><strong>$859.50</strong></div>
+                    </div>
+                </div>
+    
+                <div class="parte-de-abajo-del-recibo">
+                    <div class="fila-metodo-pago">
+                        <span class="span-con-icono">💳 Payment Method</span>
+                        <span class="el-numero-de-la-tarjeta">Amex **** 5678</span>
+                    </div>
+                    <div class="fila-categoria-viaje">
+                        <span class="span-con-icono">🏷 Category</span>
+                        <span class="cosito-azul-travel">Travel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu-de-botones-abajo-sticky">
+            <div class="item-boton-uno" onclick="console.log('share')">
+                <span class="emoji-icono">📤</span>
+                <span class="label-texto">Share</span>
+            </div>
+            <div class="item-boton-dos">
+                <span class="emoji-icono">📥</span>
+                <span class="label-texto">Download</span>
+            </div>
+            <div class="item-boton-tres">
+                <span class="emoji-icono">✏️</span>
+                <span class="label-texto">Categorize</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
