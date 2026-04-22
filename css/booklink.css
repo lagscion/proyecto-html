@@ -1,0 +1,157 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+
+
+
+
+    /* Centrado del contenido que agregues */
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+header,body {
+    margin-top: 0;background-image: url('../assets/img/Gemini_Generated_Image_c88rdsc88rdsc88r.PNG');height: 100%;
+width: 100vw;background-size: cover;background-size: cover;background-position: top center;display: flex;}
+.back {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left:4%;
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 10px;
+    font-weight: bold;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(151, 151, 151, 0.3) ;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:hover{background-color:rgba(151, 151, 151, 0.6) ;}
+
+.r{border-top:rgba(151, 151, 151, 0.8) 1px solid;margin-top: 0;width: 100%;;height: 130%; border-top-left-radius:12px ;border-top-right-radius: 12px;background: linear-gradient(to bottom left,
+            #000514 0%,
+            #0f0122 50%,
+            #2b0430 90%);
+        display: flex;}
+.rs{height: 100%;width: 100%;background-color:rgba(151, 151, 151, 0.3) ;border-top-left-radius: 12px;
+border-top-right-radius: 12px;display: flex;flex-direction: column;align-items: center;}
+.linea{border: 2px solid rgba(151, 151, 151, 1);width: 10%;height: 0;margin-top: 4%;cursor: pointer;}
+.mensaje{font-family: sans-serif;font-size: 90%;margin-top: 3%;color: rgba(151, 151, 151, 1);}
+ul{width: 100%;display: flex;list-style: none;padding: 0;flex-direction: column;height: 70%;}
+li, .enlace{font-family: sans-serif;font-size: 89%;color: aliceblue;;font-weight: bold;border-top: 1px solid white;border:1px solid rgba(220, 220, 220, 0.14) ;width: 100%;height: 100%;align-content: center;display: flex;align-items: center;line-height: 18px;letter-spacing: 1.5px;}
+li:nth-child(2){border-top: transparent;}
+li:nth-child(3) {border-top: transparent;}
+li:nth-child(4) {border: transparent;}
+li:last-child {
+    border: transparent;
+}
+li:hover, .enlace:hover{background-color:rgba(220, 220, 220, 0.14) ;border-color:rgba(255, 255,255,0.5) ;cursor: pointer;}
+
+.satelite{
+    height: 100%;
+    width: 78px;
+    justify-content: left;
+    margin-left: 2px;}
+span{font-weight: normal;font-size: 80%;color: rgba(151, 151, 151, 1);}
+.precio-contenedor {
+    display: flex;
+    align-items: center;
+
+    color: aliceblue;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.info-nave {
+    flex-grow: 1;
+    margin-left: 0;
+    margin-left: 10px;
+}
+.bitcoin {
+    width: auto;
+    /* Tamaño fijo para que no se descontrole */
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-bottom: 5px;
+    /* Evita que el flexbox lo aplaste */
+}
+.precio{padding-left: 10%;font-size: 16px;width: 15%;height: 50%;display: flex;justify-content: center;align-items: center;color: aliceblue;padding-right: 0;text-align: right;margin-right: -12px;}
+
+/* boton */
+
+.wallet{justify-content: center;align-items: center;height: 50px; width: 40%;display: flex; flex-direction: row;text-align: center;margin-right: 30%;}
+.nequi{width: auto;
+    /* Tamaño fijo para que no se descontrole */
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-left: 4%;
+    /* Evita que el flexbox lo aplaste */}
+
+.menor{justify-content: center;
+        align-items: center;
+        height: 50px;
+        display: flex;
+    font-weight: bold;
+color: aliceblue;
+;font-size: 20px;display: flex;justify-content: right;margin-right: 10%;}
+
+/* deslizador */
+.desliz{display: flex;justify-content: center;}
+input{width: 85%;cursor: pointer; appearance: none;height: 98%;background-color: rgba(151, 151, 151, 0.3);border-radius:12px ;}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Obligatorio */
+    appearance: none;
+
+    /* 1. Cambia la FORMA (Ancho y Alto) */
+    height: 50px;
+    width: 60px;
+    border-radius: 12px;
+    /* Esquinas redondeadas */
+
+    /* 2. Cambia el COLOR */
+    background-color: rgba(151, 151, 151, 0.3) ;
+    /* El gris de la imagen */
+
+    /* 3. Agrega la flecha (Opcional pero recomendado) */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="ghostwhite"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>');
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: grab;
+    z-index: 2;
+}
+.desliz::after {
+    content: "Swipe To Confirm Your Booking";
+    /* El texto va aquí */
+    display: flex;
+    position: absolute;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    pointer-events: none;
+    /* Crucial: para que el clic pase al slider */
+    z-index: 1;
+    margin-top: 20px;
+    font-family: sans-serif;
+    letter-spacing:1px;
+    color:ghostwhite ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+a{text-decoration: none;}
