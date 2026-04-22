@@ -18,7 +18,7 @@ se mueve al hacer scroll */
 header,body {
     margin-top: 0;background-image: url('../assets/img/Gemini_Generated_Image_c88rdsc88rdsc88r.PNG');height: 100%;
 width: 100vw;background-size: cover;background-size: cover;background-position: top center;display: flex;}
-a {
+.back {
     justify-content: center;
     color: white;
     text-align: center;
@@ -86,6 +86,9 @@ span{font-weight: normal;font-size: 80%;color: rgba(151, 151, 151, 1);}
     /* Evita que el flexbox lo aplaste */
 }
 .precio{padding-left: 10%;font-size: 16px;width: 15%;height: 50%;display: flex;justify-content: center;align-items: center;color: aliceblue;padding-right: 0;text-align: right;margin-right: -12px;}
+
+/* boton */
+
 .wallet{justify-content: center;align-items: center;height: 50px; width: 40%;display: flex; flex-direction: row;text-align: center;margin-right: 30%;}
 .nequi{width: auto;
     /* Tamaño fijo para que no se descontrole */
@@ -103,6 +106,8 @@ span{font-weight: normal;font-size: 80%;color: rgba(151, 151, 151, 1);}
     font-weight: bold;
 color: aliceblue;
 ;font-size: 20px;display: flex;justify-content: right;margin-right: 10%;}
+
+/* deslizador */
 .desliz{display: flex;justify-content: center;}
 input{width: 85%;cursor: pointer; appearance: none;height: 98%;background-color: rgba(151, 151, 151, 0.3);border-radius:12px ;}
 input[type="range"]::-webkit-slider-thumb {
@@ -149,3 +154,4 @@ input[type="range"]::-webkit-slider-thumb {
     align-items: center;
 }
 
+a{text-decoration: none;}
