@@ -86,4 +86,4 @@ footer div{text-align: center;font-family: sans-serif;color: rgba(228, 227, 227,
 .globo{height: 45px;width: 45px;}
 footer{gap: 0;}
 li div:hover{background-color: rgba(220, 220, 220, 0.2);cursor: pointer;}
-footer div:hover{background-color: rgba(220, 220, 220, 0.2);}
+footer div:hover{background-color: rgba(220, 220, 220, 0.2);cursor: pointer;}
