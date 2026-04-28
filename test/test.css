@@ -1,4 +1,4 @@
-html{height: 100%;align-items: center;}
+html{height: 100vh;align-items: center;}
 :root {
     /* Design Tokens */
     --bg-dark: #0f172a;
@@ -19,7 +19,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
     margin: 0;
     background: linear-gradient(to bottom left,
             #0b3a3f 0%,
@@ -28,8 +27,9 @@ body {
 }
 header{margin-top: 3%;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 200%;font-weight:bold;color: aliceblue;letter-spacing: 0.1rem;}
 main{margin-top: 6%;display: flex;flex-direction: column;gap: 60px;width: 100%;align-items: center;}
-div{border: solid 1px aliceblue;height: 100px;width: 90%;border-radius: var(--radius-md);background-color: var(--card-bg);box-shadow: var(--shadow-glass);border-color: var(--glass-border);cursor: pointer;}
+div{border: solid 1px aliceblue;height: 110px;width: 90%;border-radius: var(--radius-md);background-color: var(--card-bg);box-shadow: var(--shadow-glass);border-color: var(--glass-border);cursor: pointer;}
 div:hover{background-color: var(--glass-border);}
 p{margin-left: 5%;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 120%;font-weight:bold;color: var(--primary-text);letter-spacing: 3px;text-transform: uppercase;}
-span{margin-left: 35px;color: var(--primary-text);font-size: var(--fz-lg);font-weight: bold;letter-spacing: 3px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;}
+span{color: #94a3b8;font-size: 70%;letter-spacing: 0;}
+img{height:60px;border-radius: 100%;width: 60px;border:3px dotted var(--glass-border);}
 
